@@ -3,10 +3,10 @@
 /*************************************************************************/
 
 /*Borramos, si existe, una base de datos anterior */
-DROP DATABASE IF EXISTS investigacion2;
+DROP DATABASE IF EXISTS investigacion;
 
-/*Creamos la base de datos llamada solidarios */
-CREATE DATABASE investigacion2
+/*Creamos la base de datos llamada investigacion */
+CREATE DATABASE investigacion
 CHARACTER SET utf8
 COLLATE utf8_spanish_ci;
 
