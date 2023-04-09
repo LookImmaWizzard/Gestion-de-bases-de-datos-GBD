@@ -1,0 +1,6 @@
+select sum(grupo_titulos) 
+	from(select  codfactura, (unidades * precio) as grupo_titulos
+		from (select lf.codfactura, lf.codlibro, lf.unidades, li.precio
+			from lineafactura lf
+			inner join libro li on lf.codlibro=li.codigo) as totaltemp)
+;
